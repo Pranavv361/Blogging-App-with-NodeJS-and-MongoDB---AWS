@@ -14,7 +14,7 @@ const userSchema = new Schema(
     },
     salt: {
       type: String,
-      required: true,
+      //required: true,
     },
     password: {
       type: String,
@@ -47,9 +47,9 @@ userSchema.pre("save", function (next) {
     .update(user.password)
     .digest("hex");
 
-    this.salt = salt;
-    this.password = hashedPassword;
+  this.salt = salt;
+  this.password = hashedPassword;
 
-    next();
+  next();
 });
 module.exports = User;

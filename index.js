@@ -11,6 +11,9 @@ mongoose.connect('mongodb://localhost:27017/blogit!').then(e=>console.log("Mongo
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
+app.use(express.urlencoded({extended:false}));
+
+// Define the home route and render the home page.
 app.get("/", (req, res) => {
   res.render("home");
 });

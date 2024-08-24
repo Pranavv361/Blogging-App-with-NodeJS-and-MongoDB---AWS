@@ -5,6 +5,9 @@ const cookieParser = require("cookie-parser");
 const checkForAuthenticationCookie = require("./controllers/authentication");
 
 const userRoute = require("./routes/user");
+const blogRoute = require("./routes/blog");
+
+// Connect to MongoDB database. Replace "localhost:27017" with your MongoDB server's connection string.
 const app = express();
 const PORT = 8000;
 
@@ -27,6 +30,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/user", userRoute);
+app.use("/blog", blogRoute);
 
 // Start the server on port 8000
 app.listen(PORT, () => console.log("Server started at ", PORT));

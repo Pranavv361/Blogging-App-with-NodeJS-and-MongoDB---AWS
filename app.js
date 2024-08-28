@@ -39,4 +39,3 @@ app.use("/blog", blogRoute);
 
 // Start the server on port 8000
 app.listen(PORT, () => console.log("Server started at ", PORT));
-

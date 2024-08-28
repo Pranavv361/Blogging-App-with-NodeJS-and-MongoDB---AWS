@@ -6,8 +6,8 @@
   </head>
   <body>
     <%- include('./partials/nav') %>
-    <div>
-      class = "container mt-3">
+
+    <div class="container mt-3">
       <form action="/blog" method="post" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="coverImage" class="form-label">Cover Image</label>
@@ -19,11 +19,6 @@
             aria-describedby="coverImage"
           />
         </div>
-      </form>
-    </div>
-    <div>
-      class = "container mt-3">
-      <form>
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input
@@ -34,11 +29,6 @@
             aria-describedby="title"
           />
         </div>
-      </form>
-    </div>
-    <div>
-      class = "container mt-3">
-      <form>
         <div class="mb-3">
           <label for="body">Body</label>
           <textarea name="body" class="form-control" id="body"></textarea>
@@ -48,16 +38,7 @@
         </div>
       </form>
     </div>
-    <div class="mb-3">
-      <label for="title" class="form-label">Title</label>
-      <input
-        type="text"
-        class="form-control"
-        id="title"
-        name="title"
-        aria-describedby="title"
-      />
-    </div>
+
     <%- include('./partials/scripts') %>
   </body>
 </html>

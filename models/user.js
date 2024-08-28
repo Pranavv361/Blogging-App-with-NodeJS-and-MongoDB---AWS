@@ -1,5 +1,6 @@
 const { createHmac, randomBytes } = require("crypto");
 const { Schema, model } = require("mongoose");
+const {createTokenForUser} = require('../services/authentication');
 
 const userSchema = new Schema(
   {
@@ -14,7 +15,6 @@ const userSchema = new Schema(
     },
     salt: {
       type: String,
-      //required: true,
     },
     password: {
       type: String,
@@ -26,8 +26,8 @@ const userSchema = new Schema(
     },
     role: {
       type: String,
-      enum: ["user", "admin"],
-      default: "user",
+      enum: ["USER", "ADMIN"],
+      default: "USER",
     },
   },
   { timestamps: true }

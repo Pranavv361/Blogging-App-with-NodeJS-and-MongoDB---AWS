@@ -26,8 +26,8 @@ This is a simple blogging application built with Node.js, Express, and MongoDB. 
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-username/blogging-app.git
-    cd blogging-app
+    git clone https://github.com/Pranavv361/Blogging-App-with-NodeJS-and-MongoDB---AWS.git
+    cd Blogging-App-with-NodeJS-and-MongoDB---AWS
     ```
 
 2. **Install dependencies**:
@@ -66,7 +66,7 @@ This is a simple blogging application built with Node.js, Express, and MongoDB. 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the License file for details.
 
 ## Contributing
 

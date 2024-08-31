@@ -72,9 +72,11 @@ This project is licensed under the MIT License - see the License file for detail
 
 Contributions are welcome! Please open an issue or submit a pull request.
 
-## Acknowledgments
+## Acknowledgments and References.
+- https://getbootstrap.com/docs/5.3/customize/sass/#file-structure
+- https://www.mongodb.com/docs/mongodb-shell/run-commands/#command-exceptions
+- https://mongoosejs.com/docs/tutorials/virtuals.html
+- https://www.npmjs.com/package/cookie-parser
+- https://www.npmjs.com/package/multer
+- https://www.npmjs.com/package/dotenv
 
-- Node.js
-- Express.js
-- MongoDB
-- AWS
